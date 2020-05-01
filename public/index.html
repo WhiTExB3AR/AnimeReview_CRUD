@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <header>
+		<a href="#" class="logo">ANIME REVIEW</a>
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#" id="crud">CRUD</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+		<div class="clearfloat"></div>
+    </header>
+    
+    <div class="container">
+		<h3>CRUD - Create, Read, Update, Delete</h3>
+        <!-- <hr>
+        <h3>List</h3>
+        <button id="btnList">List</button>-->
+        <hr> 
+        <h4>Status: <span id="status"></span></h4>
+        <hr>
+        <div class="menu-choice">
+            <label>Title:</label>
+            <input type="text" id="inTitle">
+        </div>
+        <div class="menu-choice">
+            <label>Chapter:</label>
+            <input type="text" id="inChapter">
+        </div>
+        <div class="menu-choice">
+            <label>Author:</label>
+            <input type="text" id="inAuthor">
+        </div>
+        <hr>
+        <button id="btnCreate">Create</button>
+        <hr>
+		<button id="btnRead">Read Info</button>
+		<span id="result"></span>
+		<hr>
+		<button id="btnUpdate">Update</button>
+		<hr>
+		<button id="btnDelete">Delete</button>
+	</div>
+</body>
+</html>
