@@ -26,7 +26,3 @@ app.get("/", (req, res) => {
 
 var mangaRoute = require("./routers/mangasRouter");
 app.use("/mangas", mangaRoute);
-
-app.listen(port, hostname, () => {
-  console.log(`Hello! I am running at ${hostname}:${port}/`);
-});
