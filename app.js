@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
-// const hostname = 'localhost';
-// const port = 6002;
 
-// var path = require('path')
-// res.sendFile(path.join(__dirname, '../public', 'index1.html'));
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+  console.log("Server run");
+});
 
 app.use(express.json());
 app.use(
@@ -21,7 +22,9 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => {
   // res.sendFile('index.html');
-  res.sendFile("public/index.html", { root: __dirname });
+  res.sendFile("public/index.html", {
+    root: __dirname,
+  });
 });
 
 var mangaRoute = require("./routers/mangasRouter");
