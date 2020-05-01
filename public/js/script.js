@@ -56,5 +56,10 @@ $(document).ready(function () {
     $('#btnUpdate').click(() => {
         const reqURL = 'mangas/update';
     });
+    //Sự kiện click cho btnDelete
+    $('#btnDelete').click(()=>{
+        const reqURL = 'mangas/delete';
+        var titleName = $('#inTitle').val();
+    });
 
 });

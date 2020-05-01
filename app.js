@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-  console.log("Server run");
+  console.log("Server is running at web");
 });
 
 app.use(express.json());
